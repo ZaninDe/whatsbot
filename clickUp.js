@@ -28,7 +28,7 @@ async function createTask(name) {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'pk_43083189_YASPV3P82VGIFOZM5A48TVGORJYTP708'
+          Authorization: process.env.CLICKUP_AUTH
         }
       }
     );

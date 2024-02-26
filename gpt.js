@@ -1,6 +1,6 @@
 const OpenAI =  require("openai");
 
-const openai = new OpenAI({apiKey: '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'});
+const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
 async function askToGPT(question) {
     console.log(question)
